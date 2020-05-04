@@ -9,7 +9,10 @@
 <body>
     <div class="container">
         <div id="top">
-            <h1 class="title-main">To do List</h1>
+            <div class="logo">
+                <h1 class="title-main">To do List</h1>
+                <img src="icons/brain.svg" alt="">
+            </div>
             <form class="top">
                 <input type="text" placeholder="New Task" class="taskInput">
                 <input type="submit" value="Add Task" class="btn">
@@ -17,8 +20,11 @@
         </div>
         <div class="bottom">
             <h2 class="title-secondary">Tasks</h2>
-            <ul class="task-collection"></ul>
-            <a href="#" class="clear-tasks">Clear Tasks</a>
+            <ul class="task-collection">
+                <li class="collection-item"> Task 1 <span class="delete"><a href="#"><img src="icons/delete.svg" alt=""></a></span></li>
+                <li class="collection-item"> Task 2 <span class="delete"><a href="#"><img src="icons/delete.svg" alt=""></a></span></li>
+            </ul>
+            <a href="#" class="clear-tasks">Clear Tasks </a>
         </div>
     </div>
     <script src="app.js"></script>
