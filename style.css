@@ -111,18 +111,29 @@ input.btn[value="Add Task"] {
 .collection-item {
     border: 1px solid rgba(0,0,0, 20%);
     border-radius: .5px;
-    padding: 5px 15px;
+    padding: 8px 15px;
+    color: #000;
 }
 
 .collection-item:not(:last-child) {
     margin-bottom: 15px;
 }
 
-.delete img {
-    height: 15px;
-    width: 15px;
+.delete {
     float: right;
-    margin-top:5px;
+    height: 20px;
+    width: 20px;
+}
+
+.delete img {
+    height: 100%;
+    width: 100%;
+    transition: transform 1s;
+}
+
+.delete img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .clear-tasks {
